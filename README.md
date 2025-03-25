@@ -29,7 +29,7 @@ Este script permite convertir una tabla específica dentro de una Geodatabase a 
 python gdbto_table.py <path_gdb> <nombre_tabla> <campo1,campo2,...> <salida_csv>
 
 
-#2. GdbtoCsv.py
+### 2. 'GdbtoCsv.py'
 
 Este script convierte automáticamente todas las Feature Classes contenidas en una Geodatabase (.gdb) de ESRI en archivos CSV individuales.
 
