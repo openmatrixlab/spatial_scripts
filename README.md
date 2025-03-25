@@ -27,3 +27,30 @@ Este script permite convertir una tabla específica dentro de una Geodatabase a 
 
 ```bash
 python gdbto_table.py <path_gdb> <nombre_tabla> <campo1,campo2,...> <salida_csv>
+
+
+### 2. GdbtoCsv.py
+
+Este script convierte automáticamente todas las Feature Classes contenidas en una Geodatabase (.gdb) de ESRI en archivos CSV individuales.
+
+## Requisitos
+
+- Python 3.x
+- ArcGIS Desktop o ArcGIS Pro (para usar `arcpy`)
+- Librerías necesarias:
+  - `arcpy`
+  - `os`
+  - `pandas`
+  - `time`
+  - `sys`
+
+## Funcionalidad
+
+- Explora todas las Feature Classes dentro de una Geodatabase.
+- Extrae sus atributos y los guarda en archivos CSV independientes.
+- Los CSV generados tienen el mismo nombre que la capa original.
+
+## Uso
+
+```bash
+python GdbtoCsv.py <path_gdb> <carpeta_salida>
