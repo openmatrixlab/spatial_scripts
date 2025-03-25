@@ -28,22 +28,31 @@ Convierte una tabla específica de una Geodatabase en un archivo CSV, permitiend
 
 ```bash
 python gdbto_table.py <ruta_gdb> <nombre_tabla> <campos> <ruta_salida_csv>
+```
 
-2. GdbtoCsv.py
+### 2. `GdbtoCsv.py`
+
 Convierte automáticamente todas las Feature Classes dentro de una Geodatabase en archivos CSV individuales, exportando todos los campos.
 
-Características
+#### Características
 
-Recorre todas las capas vectoriales (Feature Classes) en la GDB.
-Crea un CSV por cada capa, con su mismo nombre.
-Exporta todos los campos alfanuméricos (excluye geometría).
-Uso
+- Recorre todas las capas vectoriales (Feature Classes) en la GDB.
+- Crea un CSV por cada capa, con su mismo nombre.
+- Exporta todos los campos alfanuméricos (excluye geometría).
 
+#### Uso
+
+```bash
 python GdbtoCsv.py <ruta_gdb> <carpeta_salida>
-Parámetros
+```
 
-<ruta_gdb>: Ruta absoluta a la geodatabase.
-<carpeta_salida>: Carpeta donde se guardarán los archivos CSV generados.
-Ejemplo
+#### Parámetros
 
+- `<ruta_gdb>`: Ruta absoluta a la geodatabase.
+- `<carpeta_salida>`: Carpeta donde se guardarán los archivos CSV generados.
+
+#### Ejemplo
+
+```bash
 python GdbtoCsv.py "C:/datos/proyecto.gdb" "C:/salida/csvs/"
+```
