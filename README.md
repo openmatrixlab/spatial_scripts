@@ -56,3 +56,14 @@ python GdbtoCsv.py <ruta_gdb> <carpeta_salida>
 ```bash
 python GdbtoCsv.py "C:/datos/proyecto.gdb" "C:/salida/csvs/"
 ```
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT.
+
+Puedes usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del software, siempre y cuando incluyas el aviso de copyright original y esta licencia en cualquier copia del código.
+
+
+
+
+
